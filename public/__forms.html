@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+  Static form definition for Netlify Forms.
+  Netlify scans this file at deploy time to register the "appointment" form.
+  The real form lives in components/forms/AppointmentForm.jsx and posts here.
+  Field names must stay in sync with that component.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Appointment form definition</title>
+  </head>
+  <body>
+    <form name="appointment" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="appointment" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="service"><option value="">Service</option></select>
+      <input type="date" name="date" />
+      <select name="time"><option value="">Time</option></select>
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>
