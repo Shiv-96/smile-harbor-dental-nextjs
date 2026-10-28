@@ -5,7 +5,7 @@ Built with Next.js (static export) and Tailwind CSS v4, and deployed on Netlify 
 
 > Sample website for demonstration purposes. The clinic, doctors, prices and contact details are fictional.
 
-**Live demo:** https://smile-harbor-dental.netlify.app
+**Live demo:** https://tiny-kelpie-d0392b.netlify.app
 
 ## Screenshots
 
@@ -79,7 +79,7 @@ The static site is written to the `out` folder.
 
 | Setting | Where | Notes |
 | --- | --- | --- |
-| Site URL for SEO tags | `NEXT_PUBLIC_SITE_URL` environment variable | Defaults to `https://smile-harbor-dental.netlify.app` |
+| Site URL for SEO tags | `NEXT_PUBLIC_SITE_URL` environment variable | Optional. On Netlify the site URL is detected automatically |
 | Clinic name, phone, address, hours | `data/clinic.js` | |
 | Services, doctors, prices, FAQ, photos | `data/content.js` | |
 | Form options and time slots | `data/appointment.js` | Keep field names in sync with `public/__forms.html` |
@@ -92,8 +92,8 @@ The static site is written to the `out` folder.
 3. Netlify reads `netlify.toml`, so the settings are filled in automatically:
    - Build command: `npm run build`
    - Publish directory: `out`
-4. Optional: under **Site configuration > Environment variables**, add `NEXT_PUBLIC_SITE_URL`
-   with your final site URL.
+4. Optional: the site URL for SEO tags is read from Netlify automatically. If you add a custom
+   domain, set `NEXT_PUBLIC_SITE_URL` under **Site configuration > Environment variables**.
 5. Under **Forms**, enable form detection, then trigger a new deploy.
 6. After the deploy, the `appointment` form appears in the Forms tab. Send a test submission.
 

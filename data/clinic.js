@@ -3,8 +3,15 @@
  * All data is fictional and exists only for this demo website.
  */
 
+/**
+ * Absolute site URL used for canonical links, Open Graph tags and the sitemap.
+ * Order: an explicit NEXT_PUBLIC_SITE_URL, then the URL that Netlify sets
+ * automatically during its builds, then the live demo address for local builds.
+ */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://smile-harbor-dental.netlify.app";
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.URL ||
+  "https://tiny-kelpie-d0392b.netlify.app";
 
 const address = {
   line1: "2nd Floor, Harbor Point, Lane 6",

@@ -158,6 +158,7 @@ export const testimonials = [
 
 export const pricing = [
   { treatment: "Consultation and check-up", visits: "1 visit", price: 500 },
+  { treatment: "Children's check-up and fluoride care", visits: "1 visit", price: 600 },
   { treatment: "Digital X-ray (single tooth)", visits: "Same visit", price: 300 },
   { treatment: "Cleaning and scaling", visits: "1 visit", price: 1200 },
   { treatment: "Tooth-coloured filling", visits: "1 visit", price: 1500 },
