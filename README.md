@@ -5,7 +5,7 @@ Built with Next.js (static export) and Tailwind CSS v4, and deployed on Netlify 
 
 > Sample website for demonstration purposes. The clinic, doctors, prices and contact details are fictional.
 
-**Live demo:** https://tiny-kelpie-d0392b.netlify.app
+**Live demo:** https://smile-harbor-dental-care.netlify.app
 
 ## Screenshots
 

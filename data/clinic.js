@@ -11,7 +11,7 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.URL ||
-  "https://tiny-kelpie-d0392b.netlify.app";
+  "https://smile-harbor-dental-care.netlify.app";
 
 const address = {
   line1: "2nd Floor, Harbor Point, Lane 6",
